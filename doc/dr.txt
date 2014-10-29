@@ -1,1 +1,48 @@
-﻿
+﻿ex08
+
+8/20
+
+-1
+.gitignore manquant
+
+-2
+pas de lib
+
+la bibliothèque (library) doit être dans le répertoire lib
+library ex8_function;
+
+8.1
+-1
+  var membres = [
+    {"associationName": "IS", "firstName": "Dzenan", "lastName": "Ridjanovic","email": "dr@gmail.com"},
+    {"associationName": "IS","firstName": "Robert","lastName": "Nelson","email": "rn@gmail.com"},
+    {"associationName": "CS","firstName": "David","lastName": "Curtis","email": "dc@gmail.com"},
+    ];
+-->
+associations = [
+  {“name”: “IS”, “description”: “Information Systems”, “members”: 
+   [{“firstName”: “Dzenan”, “lastName”: “Ridjanovic”, “email”: “dr@gmail.com”},
+    {“firstName”: “Robert”, “lastName”: “Nelson”, “email”: “rn@gmail.com”}]},
+  {“name”: “CS”, “description”: “Computer Science”,  “members”: 
+   [{“firstName”: “David”, “lastName”: “Curtis”, “email”: “dc@gmail.com”}]}
+]
+
+-1
+sortByLastName(var membres) {
+-->
+sortByLastName(List membres) {
+
+sortByLastNameLetter est un mauvais nom:
+sortByLastNameLetter
+-->
+List extractByLastNameLetter(List membres, String lettre) {
+
+-1 GIVEN ASSOCIATION
+Sort the list of members of a GIVEN ASSOCIATION first by the last name, 
+THEN by the first name.
+-1 THEN
+
+8.2
+-5
+8.2
+Create a CLASS MODEL with associations and members...

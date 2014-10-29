@@ -1,7 +1,6 @@
 library ex8_function;
 
 // Question 1
-
 sortByLastName(var membres) {
   membres.sort((x, y) => x["lastName"].compareTo(y["lastName"]));
   for (var element in membres) {
@@ -32,7 +31,6 @@ sortByLastNameLetter(var membres, var lettre) {
 }
 
 // Question 2
-
 ajoutMem(var membres, var associationName, var firstName, var lastName, var email) {
   membres.add({
     "associationName": associationName,
@@ -58,7 +56,6 @@ deleteMem(var membres, var givenEmail) {
     print(element);
   }
   return ("");
-
 }
 
 changeMem(var membres, var associationName, var firstName, var lastName, var email) {
@@ -73,5 +70,5 @@ changeMem(var membres, var associationName, var firstName, var lastName, var ema
    for (var element in membres) {
     print(element);
   }
-return ("");
+  return ("");
 }
